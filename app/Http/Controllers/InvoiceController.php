@@ -11,7 +11,7 @@ class InvoiceController extends Controller
     {
         // Get all invoices
         $invoices = invoice::all();
-        return view('invoices.index', compact('invoices'));
+        return view('invoice.index', compact('invoices'));
     }
 
     public function show($id)

@@ -10,5 +10,5 @@ Route::get('/', function () {
 });
 
 Route::resource('customers', CustomerController::class);
-Route::resource('invoices', InvoiceController::class);
+Route::resource('invoice', InvoiceController::class);
 Route::resource('pembayarans', PembayaranController::class);

@@ -5,11 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class customer extends Model
+class customers extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['NIK', 'nama_customer', 'email', 'country'];
+    protected $fillable = ['NIK', 'nama_customer', 'email', 'country',];
 
     public function invoices()
     {
