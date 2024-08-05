@@ -9,6 +9,7 @@ class customers extends Model
 {
     use HasFactory;
 
+    protected $table = 'customers';
     protected $fillable = ['NIK', 'nama_customer', 'email', 'country',];
 
     public function invoices()

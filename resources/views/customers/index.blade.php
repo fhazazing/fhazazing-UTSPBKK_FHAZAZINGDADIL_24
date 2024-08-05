@@ -1,3 +1,5 @@
+@extends('template.app')
+@section('content')
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,7 +44,6 @@
                                         <td>{{ $pengguna->country }}</td>
                                         <td class="text-center">
                                             <form onsubmit="return confirm('Apakah Anda Yakin ?');" action="{{ route('customers.destroy', $pengguna->id) }}" method="POST">
-                                                <a href="{{ route('customers.show', $pengguna->id) }}" class="btn btn-sm btn-dark">SHOW</a>
                                                 <a href="{{ route('customers.edit', $pengguna->id) }}" class="btn btn-sm btn-primary">EDIT</a>
                                                 @csrf
                                                 @method('DELETE')
@@ -66,6 +67,6 @@
     </div>
 </body>
 </html>
-
+@endsection
 
 

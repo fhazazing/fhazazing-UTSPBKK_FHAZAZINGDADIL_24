@@ -11,14 +11,14 @@ class PembayaranController extends Controller
     {
         // Get all pembayaran
         $pembayarans = pembayaran::all();
-        return view('pembayarans.index', compact('pembayarans'));
+        return view('pembayaran.index', compact('pembayaran'));
     }
 
     public function show($id)
     {
         // Get a single pembayaran
         $pembayaran = pembayaran::findOrFail($id);
-        return view('pembayarans.show', compact('pembayaran'));
+        return view('pembayaran.show', compact('pembayaran'));
     }
 
     public function create()
